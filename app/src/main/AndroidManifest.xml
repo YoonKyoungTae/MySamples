@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySamples">
         <activity
-            android:name=".MainActivity"
+            android:name=".list.PhotoListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
