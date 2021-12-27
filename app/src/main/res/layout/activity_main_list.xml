@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
             name="photo"
-            type="dev.androidblog.mysamples.list.Photo" />
+            type="dev.androidblog.mysamples.data.model.Photo" />
+        <variable
+            name="photoViewModel"
+            type="dev.androidblog.mysamples.list.PhotoViewModel" />
     </data>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_text1"
+        <Button
+            android:id="@+id/btn_load_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{photo.id}" />
+            android:text="LOAD DATA"
+            android:onClick="@{() -> photoViewModel.getPhotoList()}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{photo.thumbnailUrl}" />
-
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

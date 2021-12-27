@@ -1,7 +1,4 @@
-package dev.androidblog.mysamples.list
-
-// Response API
-// https://jsonplaceholder.typicode.com/photos
+package dev.androidblog.mysamples.data.model
 
 data class Photo(
     val id: String = "0",
