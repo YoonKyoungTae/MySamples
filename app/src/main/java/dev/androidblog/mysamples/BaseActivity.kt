@@ -11,8 +11,12 @@ abstract class BaseActivity<T: ViewBinding> : AppCompatActivity() {
 
     abstract fun getBindingTargetLayoutId(): Int
 
+    abstract fun initializeView()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, getBindingTargetLayoutId())
+        initializeView()
     }
+
 }
