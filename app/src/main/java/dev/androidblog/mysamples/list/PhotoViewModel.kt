@@ -2,9 +2,10 @@ package dev.androidblog.mysamples.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import dev.androidblog.mysamples.data.PhotoRepo
 import dev.androidblog.mysamples.data.model.Photo
-import okhttp3.internal.EMPTY_HEADERS
+import kotlinx.coroutines.launch
 
 class PhotoViewModel : ViewModel() {
 
@@ -13,7 +14,10 @@ class PhotoViewModel : ViewModel() {
         get() = _photoList
 
     fun requestPhotoList() {
-        PhotoRepo.getPhotoList()
+        viewModelScope.launch {
+            val photoList = PhotoRepo.getPhotoList()
+            _photoList.value = photoList
+        }
     }
 
 }
