@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -16,21 +17,27 @@
 
         <ImageView
             android:id="@+id/iv_photo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@color/cardview_dark_background"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:loadUrl="@{photo.thumbnailUrl}" />
+            app:loadUrl="@{photo.thumbnailUrl}"
+            app:loadUrlRound="@{16}"
+            tools:background="@color/purple_500" />
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@{photo.title}"
+            android:textColor="@color/black"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/iv_photo"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Contents..." />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

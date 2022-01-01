@@ -10,6 +10,9 @@ object PhotoRepo {
 
         if (response.isSuccessful) {
             response.body()?.let {
+                it.forEach { photo ->
+                    photo.thumbnailUrl = "https://cdn.pixabay.com/photo/2021/01/24/19/05/crane-5946169_1280.jpg"
+                }
                 return it
             }
         }

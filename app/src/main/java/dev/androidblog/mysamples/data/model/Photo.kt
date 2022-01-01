@@ -4,5 +4,5 @@ data class Photo(
     val id: String = "0",
     val title: String = "",
     val url: String = "",
-    val thumbnailUrl: String = ""
+    var thumbnailUrl: String = ""
 )
