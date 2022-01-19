@@ -13,3 +13,9 @@ fun View.invisible() {
 fun View.gone() {
     this.visibility = View.GONE
 }
+
+fun View.isVisible() = visibility == View.VISIBLE
+
+fun View.isInvisible() = visibility == View.INVISIBLE
+
+fun View.isGone() = visibility == View.GONE
