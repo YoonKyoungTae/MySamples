@@ -1,10 +1,10 @@
-package dev.androidblog.mysamples.list
+package dev.diordna.thumbsup.feature.home.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import dev.androidblog.mysamples.data.model.Photo
-import dev.androidblog.mysamples.databinding.ListItemPhotoBinding
+import dev.diordna.thumbsup.databinding.ListItemPhotoBinding
+import dev.diordna.thumbsup.feature.home.data.model.Photo
 
 class PhotoListAdapter : RecyclerView.Adapter<PhotoListAdapter.ViewHolder>() {
 

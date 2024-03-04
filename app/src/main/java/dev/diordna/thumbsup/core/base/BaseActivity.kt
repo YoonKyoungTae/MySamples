@@ -1,4 +1,4 @@
-package dev.androidblog.mysamples
+package dev.diordna.thumbsup.core.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

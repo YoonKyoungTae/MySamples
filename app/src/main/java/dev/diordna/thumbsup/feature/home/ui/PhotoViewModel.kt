@@ -1,10 +1,10 @@
-package dev.androidblog.mysamples.list
+package dev.diordna.thumbsup.feature.home.ui
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dev.androidblog.mysamples.data.PhotoRepo
-import dev.androidblog.mysamples.data.model.Photo
+import dev.diordna.thumbsup.feature.home.data.PhotoRepo
+import dev.diordna.thumbsup.feature.home.data.model.Photo
 import kotlinx.coroutines.launch
 
 class PhotoViewModel : ViewModel() {

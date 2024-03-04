@@ -1,4 +1,4 @@
-package dev.androidblog.mysamples.data.model
+package dev.diordna.thumbsup.feature.home.data.model
 
 data class Photo(
     val id: String = "0",

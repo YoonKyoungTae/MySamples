@@ -1,7 +1,6 @@
-package dev.androidblog.mysamples.api
+package dev.diordna.thumbsup.core.api
 
-import dev.androidblog.mysamples.data.model.Photo
-import retrofit2.Call
+import dev.diordna.thumbsup.feature.home.data.model.Photo
 import retrofit2.Response
 import retrofit2.http.GET
 

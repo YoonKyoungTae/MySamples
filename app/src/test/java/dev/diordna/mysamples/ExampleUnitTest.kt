@@ -1,4 +1,4 @@
-package dev.androidblog.mysamples
+package dev.diordna.mysamples
 
 import org.junit.Test
 

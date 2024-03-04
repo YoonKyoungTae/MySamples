@@ -1,7 +1,7 @@
-package dev.androidblog.mysamples.data
+package dev.diordna.thumbsup.feature.home.data
 
-import dev.androidblog.mysamples.api.RetrofitProvider
-import dev.androidblog.mysamples.data.model.Photo
+import dev.diordna.thumbsup.core.api.RetrofitProvider
+import dev.diordna.thumbsup.feature.home.data.model.Photo
 
 object PhotoRepo {
 

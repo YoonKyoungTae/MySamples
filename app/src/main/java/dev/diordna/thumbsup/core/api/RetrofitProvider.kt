@@ -1,4 +1,4 @@
-package dev.androidblog.mysamples.api
+package dev.diordna.thumbsup.core.api
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

@@ -1,4 +1,4 @@
-package dev.androidblog.mysamples.common.extension
+package dev.diordna.thumbsup.core.common.extension
 
 import android.view.View
 

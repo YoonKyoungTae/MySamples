@@ -1,10 +1,10 @@
-package dev.androidblog.mysamples.list
+package dev.diordna.thumbsup.feature.home.ui
 
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import dev.androidblog.mysamples.BaseFragment
-import dev.androidblog.mysamples.R
-import dev.androidblog.mysamples.databinding.FragmentPhotoListBinding
+import dev.diordna.thumbsup.R
+import dev.diordna.thumbsup.core.base.BaseFragment
+import dev.diordna.thumbsup.databinding.FragmentPhotoListBinding
 
 class PhotoListFragment : BaseFragment<FragmentPhotoListBinding>() {
 

@@ -6,11 +6,11 @@
 
         <variable
             name="photo"
-            type="dev.androidblog.mysamples.data.model.Photo" />
+            type="dev.diordna.thumbsup.feature.home.data.model.Photo" />
 
         <variable
             name="photoViewModel"
-            type="dev.androidblog.mysamples.list.PhotoViewModel" />
+            type="dev.diordna.thumbsup.feature.home.ui.PhotoViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
