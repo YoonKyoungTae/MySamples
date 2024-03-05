@@ -4,7 +4,7 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitProvider {
+class Api {
 
     private val okHttpClient = OkHttpClient.Builder()
 
@@ -14,6 +14,10 @@ object RetrofitProvider {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-    val api: APIs = retrofit.create(APIs::class.java)
+    fun getPhotoApi(): PhotoApi {
+        return retrofit.create(PhotoApi::class.java)
+    }
+
+//    val api: APIs = retrofit.create(APIs::class.java)
 
 }

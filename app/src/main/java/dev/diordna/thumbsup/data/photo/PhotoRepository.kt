@@ -4,6 +4,6 @@ import dev.diordna.thumbsup.data.photo.model.PhotoApiModel
 
 interface PhotoRepository {
 
-    suspend fun getPhotoList(): ArrayList<PhotoApiModel>
+    suspend fun fetchPhotoList(): ArrayList<PhotoApiModel>
 
 }

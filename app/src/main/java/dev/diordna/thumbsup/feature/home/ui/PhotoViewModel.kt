@@ -20,7 +20,7 @@ class PhotoViewModel @Inject constructor(
 
     fun requestPhotoList() {
         viewModelScope.launch {
-            val photoList = photoRepository.getPhotoList()
+            val photoList = photoRepository.fetchPhotoList()
             _photoList.value = photoList
         }
     }
