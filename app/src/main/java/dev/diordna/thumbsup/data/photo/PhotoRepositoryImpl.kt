@@ -1,11 +1,11 @@
-package dev.diordna.thumbsup.feature.home.data
+package dev.diordna.thumbsup.data.photo
 
 import dev.diordna.thumbsup.core.api.RetrofitProvider
-import dev.diordna.thumbsup.feature.home.data.model.Photo
+import dev.diordna.thumbsup.data.photo.model.PhotoApiModel
 
-object PhotoRepo {
+class PhotoRepositoryImpl: PhotoRepository {
 
-    suspend fun getPhotoList(): ArrayList<Photo>? {
+    override suspend fun getPhotoList(): ArrayList<PhotoApiModel> {
         val response = RetrofitProvider.api.getPhotos()
 
         if (response.isSuccessful) {
@@ -17,6 +17,6 @@ object PhotoRepo {
             }
         }
 
-        return response.body()
+        return response.body()!!
     }
 }

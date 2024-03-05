@@ -7,7 +7,7 @@
 
         <variable
             name="photo"
-            type="dev.diordna.thumbsup.feature.home.data.model.Photo" />
+            type="dev.diordna.thumbsup.data.photo.model.PhotoApiModel" />
 
     </data>
 

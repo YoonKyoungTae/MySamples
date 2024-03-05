@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import dev.diordna.thumbsup.databinding.ListItemPhotoBinding
-import dev.diordna.thumbsup.feature.home.data.model.Photo
+import dev.diordna.thumbsup.data.photo.model.PhotoApiModel
 
 class PhotoListAdapter : RecyclerView.Adapter<PhotoListAdapter.ViewHolder>() {
 
-    var photoList: ArrayList<Photo> = arrayListOf()
+    var photoList: ArrayList<PhotoApiModel> = arrayListOf()
         set(value) {
             field = value
             notifyDataSetChanged()
@@ -26,7 +26,7 @@ class PhotoListAdapter : RecyclerView.Adapter<PhotoListAdapter.ViewHolder>() {
 
     class ViewHolder(private val binding: ListItemPhotoBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun binding(photo: Photo) {
+        fun binding(photo: PhotoApiModel) {
             binding.photo = photo
         }
 

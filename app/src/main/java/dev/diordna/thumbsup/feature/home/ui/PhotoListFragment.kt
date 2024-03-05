@@ -2,10 +2,12 @@ package dev.diordna.thumbsup.feature.home.ui
 
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import dev.diordna.thumbsup.R
 import dev.diordna.thumbsup.core.base.BaseFragment
 import dev.diordna.thumbsup.databinding.FragmentPhotoListBinding
 
+@AndroidEntryPoint
 class PhotoListFragment : BaseFragment<FragmentPhotoListBinding>() {
 
     private val photoViewModel: PhotoViewModel by viewModels()
