@@ -1,27 +1,31 @@
 package dev.diordna.thumbsup.core.di
 
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import dev.diordna.thumbsup.core.api.Api
-import dev.diordna.thumbsup.data.photo.PhotoRemoteDataSource
 import dev.diordna.thumbsup.data.photo.PhotoRepository
 import dev.diordna.thumbsup.data.photo.PhotoRepositoryImpl
+import dev.diordna.thumbsup.data.user.UserRepository
+import dev.diordna.thumbsup.data.user.UserRepositoryImpl
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object RepositoryModule {
-
-    @Provides
-    fun providePhotoRepository(): PhotoRepository {
-        return PhotoRepositoryImpl(PhotoRemoteDataSource(Api()))
-    }
+abstract class RepositoryModule {
 
 //    @Provides
-//    fun providePhotoRemoteDataSource(): PhotoRemoteDataSource {
-//        return PhotoRemoteDataSource()
+//    fun providePhotoRepository(): PhotoRepository {
+//        return PhotoRepositoryImpl(PhotoRemoteDataSource(Api()))
 //    }
+
+    @Binds
+    @Singleton
+    abstract fun bindPhotoRepository(repo: PhotoRepositoryImpl): PhotoRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindUserRepository(repo: UserRepositoryImpl): UserRepository
 
 
 }

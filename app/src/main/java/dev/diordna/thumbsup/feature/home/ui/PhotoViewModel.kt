@@ -6,12 +6,14 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dev.diordna.thumbsup.data.photo.PhotoRepository
 import dev.diordna.thumbsup.data.photo.model.PhotoApiModel
+import dev.diordna.thumbsup.data.user.UserRepository
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class PhotoViewModel @Inject constructor(
-    private val photoRepository: PhotoRepository
+    private val photoRepository: PhotoRepository,
+    private val userRepository: UserRepository
 ) : ViewModel() {
 
     private val _photoList: MutableLiveData<ArrayList<PhotoApiModel>> = MutableLiveData()

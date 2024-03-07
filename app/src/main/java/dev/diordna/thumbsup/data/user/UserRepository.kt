@@ -1,4 +1,4 @@
 package dev.diordna.thumbsup.data.user
 
-class UserRepository {
+interface UserRepository {
 }

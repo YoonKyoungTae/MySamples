@@ -1,15 +1,15 @@
 package dev.diordna.thumbsup.data.photo
 
-import dev.diordna.thumbsup.core.api.Api
+import dev.diordna.thumbsup.core.api.PhotoApi
 import dev.diordna.thumbsup.data.photo.model.PhotoApiModel
 import javax.inject.Inject
 
 class PhotoRemoteDataSource @Inject constructor(
-    private val api: Api
+    private val api: PhotoApi
 ) {
 
     suspend fun getPhotoList(): ArrayList<PhotoApiModel> {
-        val response = api.getPhotoApi().getPhotos()
+        val response = api.getPhotos()
 
         if (response.isSuccessful) {
             response.body()?.let {
