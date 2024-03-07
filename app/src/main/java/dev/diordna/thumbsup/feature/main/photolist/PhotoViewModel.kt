@@ -1,4 +1,4 @@
-package dev.diordna.thumbsup.feature.home.ui
+package dev.diordna.thumbsup.feature.main.photolist
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

@@ -1,4 +1,4 @@
-package dev.diordna.thumbsup.feature.home.ui
+package dev.diordna.thumbsup.feature.main
 
 import dagger.hilt.android.AndroidEntryPoint
 import dev.diordna.thumbsup.R

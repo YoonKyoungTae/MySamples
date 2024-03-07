@@ -1,4 +1,4 @@
-package dev.diordna.thumbsup.feature.home.ui
+package dev.diordna.thumbsup.feature.main.photolist
 
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager

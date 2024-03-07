@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySamples">
         <activity
-            android:name="dev.diordna.thumbsup.feature.home.ui.PhotoListActivity"
+            android:name="dev.diordna.thumbsup.feature.main.PhotoListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

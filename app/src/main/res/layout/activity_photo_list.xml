@@ -12,7 +12,7 @@
 
         <fragment
             android:id="@+id/fragment"
-            android:name="dev.diordna.thumbsup.feature.home.ui.PhotoListFragment"
+            android:name="dev.diordna.thumbsup.feature.main.photolist.PhotoListFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

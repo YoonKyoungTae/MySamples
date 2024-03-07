@@ -10,7 +10,7 @@
 
         <variable
             name="photoViewModel"
-            type="dev.diordna.thumbsup.feature.home.ui.PhotoViewModel" />
+            type="dev.diordna.thumbsup.feature.main.photolist.PhotoViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

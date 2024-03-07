@@ -1,4 +1,4 @@
-package dev.diordna.thumbsup.feature.home.ui
+package dev.diordna.thumbsup.feature.main.photolist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
